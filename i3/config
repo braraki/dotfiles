@@ -28,7 +28,7 @@ font pango:DejaVu Sans 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -154,7 +154,7 @@ bindsym $mod+r mode "resize"
 bar {
         # output eDP1
         position top
-        status_command i3status -c /home/wallar/.i3/status_config
+        status_command i3status -c /home/brandon/.i3/status_config
         font pango:dejavu sans 9
 }
 
@@ -172,7 +172,7 @@ bindsym XF86AudioMute exec /usr/bin/pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym $mod+i exec "google-chrome"
 bindsym $mod+Shift+i exec "google-chrome --app=http://google.com"
 
-bindsym $mod+Shift+o exec "i3lock -i /home/wallar/background.jpg"
+bindsym $mod+Shift+o exec "i3lock -i /home/brandon/background.jpg"
 
 exec --no-startup-id nm-applet
 
@@ -184,9 +184,10 @@ bindsym Control+$mod+l workspace next
 bindsym Control+$mod+h workspace prev
 bindsym $mod+Shift+p exec "gnome-screenshot -a"
 
-exec --no-startup-id feh --bg-fill /home/wallar/background.jpg
-exec --no-startup-id gnome-sound-applet
+exec --no-startup-id feh --bg-fill /home/brandon/background.jpg
+#exec --no-startup-id gnome-sound-applet
 exec --no-startup-id gnome-settings-daemon
+#exec --no-startup-id unity-settings-daemon
 
 new_window normal
 hide_edge_borders vertical

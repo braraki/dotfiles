@@ -274,11 +274,11 @@ function! NerdTree()
     \ endif
 endfunction
 
-function! Taglist()
-    let g:Tlist_WinWidth=50
-    let g:Tlist_Use_Right_Window=1
-    nnoremap <silent> <F6> :TlistToggle<CR>
-endfunction
+" function! Taglist()
+"     let g:Tlist_WinWidth=50
+"     let g:Tlist_Use_Right_Window=1
+"     nnoremap <silent> <F6> :TlistToggle<CR>
+" endfunction
 
 function! PythonMode()
     let g:pymode_lint = 1
@@ -309,7 +309,7 @@ call Powerline()
 call SyntasticOptions()
 " call YouCompleteMe()
 call NerdTree()
-call Taglist()
+" call Taglist()
 call PythonMode()
 
 let g:go_fmt_command = "goimports"
